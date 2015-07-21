@@ -1,0 +1,9 @@
+[
+  "http://google.com",
+  "http://localhost/com",
+  "http://localhost/.com",
+  "http://localhost:8080/.com",
+  "http://google.com:8080/.com",
+  "http://localhost/xyz.com",
+  "http://bit.ly/1tGYKCV"
+]

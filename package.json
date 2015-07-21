@@ -1,0 +1,28 @@
+{
+  "name": "eddystone-url-encoding",
+  "version": "1.0.0",
+  "description": "Encode and decode Eddystone URLs",
+  "main": "index.js",
+  "author": "Patrick Gaubatz <patrick@gaubatz.at>",
+  "repository": "pgaubatz/node-eddystone-url-encoding",
+  "license": "MIT",
+  "keywords": [
+    "eddystone",
+    "uribeacon",
+    "bluetooth",
+    "bluetooth low energy",
+    "ble",
+    "physical web"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec test/",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report html -- -R spec"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4"
+  }
+}
