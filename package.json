@@ -21,6 +21,9 @@
     "test": "mocha -R spec test/",
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report html -- -R spec"
   },
+  "dependencies": {
+    "url-parse": "^1.0.2"
+  },
   "devDependencies": {
     "chai": "^2.3.0",
     "mocha": "^2.2.4"
