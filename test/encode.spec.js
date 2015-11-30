@@ -25,9 +25,13 @@ describe('encode()', function () {
     encoded.length.should.equal(15);
   });
 
-  it('should encode URLs and strip trailing slashes', function () {
-    encode('https://www.uribeacon.org/')[10].should.equal(0x08); // '.org' suffix
-    encode('http://1.at/').length.should.equal(1 + 4); // 1 prefix + 4 characters
+  it('should encode URLs', function () {
+    encode('https://www.uribeacon.org/')[10].should.equal(0x01); // '.org/' suffix
+
+    encode('http://1.com').length.should.equal(1 + 2); // 1 prefix + 2 characters
+    encode('http://1.com/').length.should.equal(1 + 2); // 1 prefix + 2 characters
+
+    encode('http://1.at/').length.should.equal(1 + 5); // 1 prefix + 5 characters
   });
 
   it('should throw a TypeError if something other than a string is provided', function () {
