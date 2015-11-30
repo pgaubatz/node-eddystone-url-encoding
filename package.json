@@ -1,6 +1,6 @@
 {
   "name": "eddystone-url-encoding",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Encode and decode Eddystone URLs",
   "main": "index.js",
   "author": "Patrick Gaubatz <patrick@gaubatz.at>",
